@@ -43,7 +43,7 @@ console.log(Rectangle.whoAmI());
 // console.log(d.getDate());
 */
 
-//Inheritence
+/*//Inheritence
 
 class Shape{
     constructor(color, depth){
@@ -79,9 +79,9 @@ class Rectangle extends Shape{
         return perimeter;
     }
 
-    /*paint(){
-        console.log("The shape is of color: "+ this.color);
-    }*/
+    //paint(){
+    //  console.log("The shape is of color: "+ this.color);
+    //}
 }
 
 class Circle extends Shape{
@@ -99,9 +99,9 @@ class Circle extends Shape{
         return 2*3.14*this.radius;
     }
 
-    /*paint(){    //Repeating itself
-        console.log("The shape is of color: "+ this.color);
-    }*/
+    // paint(){    //Repeating itself
+    //     console.log("The shape is of color: "+ this.color);
+    // }
 }
 
 class Square extends Shape{
@@ -120,9 +120,9 @@ class Square extends Shape{
         return 4*this.side;
     }
 
-    /*paint(){    //Repeating itself
-        console.log("The shape is of color: "+ this.color);
-    }*/
+    // paint(){    //Repeating itself
+    //     console.log("The shape is of color: "+ this.color);
+    // }
 }
 
 let s1 = new Rectangle(10, 20, 5, "red")
@@ -148,3 +148,139 @@ function whoHasMoreArea(s1, s2){
 }
 
 whoHasMoreArea(new Rectangle(10,20,5,"Red"), new Circle(15, 5, "Pink"))
+*/
+
+
+
+
+
+
+
+/*//FileRead Asynchronously
+const fs = require('fs');
+fs.readFile("a.txt", "utf-8", (err, data) => {
+    if (err) {
+        console.error(err);
+        return;
+    }
+    console.log(data);   //This will print the contents of the file
+});
+*/
+
+
+/*//Callback Function
+function callback(){
+    console.log("Hi there");
+}
+setTimeout(callback, 3000);
+
+let ctr = 0
+for (let i=0; i<1000; i++){
+    ctr+=1;
+}
+console.log(ctr);
+*/
+
+
+/*//Promisified version
+function setTimeoutPromisified(ms){
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function callback(){
+    console.log("Three seconds have passed");
+}
+
+setTimeoutPromisified(3000).then(callback);
+*/
+
+/*//Convert fs.readfile into it's promisified version
+const fs = require('fs');
+function fsReadFilePromisified(filePath, encoding){
+    //let obj = new Promise((resolve, reject)=> {})
+    return new Promise((resolve, reject)=> {
+        fs.readFile(filePath, encoding, (err, data) =>{
+            if(err){
+                reject(err);
+            }else{
+                resolve(data);
+            }
+        })
+    })
+    //return obj;
+}
+
+function callback(data){
+    console.log(data);
+}
+
+function callbackErr(){
+    console.log("Error while reading the file");
+}
+
+fsReadFilePromisified("a.txt", "utf-8").then(callback).catch(callbackErr)
+*/
+
+
+/*//Callback Hell
+setTimeout(function() {
+    console.log("Hi");
+    setTimeout(function() {
+        console.log("Hello");
+        setTimeout(function() {
+            console.log("Bye");
+        }, 5000)
+    }, 3000)
+}, 1000)
+*/
+
+
+/*//Alternate solution for callback hell -> by separating out the functions
+setTimeout(step1done, 1000);
+
+function step1done(){
+    console.log("Hi");
+    setTimeout(step2done, 3000);
+}
+
+function step2done(){
+    console.log("Hello");
+    setTimeout(step3done, 5000);
+}
+
+function step3done(){
+    console.log("Bye");
+}
+*/
+
+/*//Promisified version of the problem
+function setTimeoutPromisified(ms){
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+setTimeoutPromisified(1000).then(function(){
+    console.log("Hi");
+    setTimeoutPromisified(3000).then(function(){
+        console.log("Hello");
+        setTimeoutPromisified(5000).then(function(){
+            console.log("Bye");
+        })
+    })
+})
+*/
+
+//Another way to write the same thing -> Promise Chaining
+function setTimeoutPromisified(ms){
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+setTimeoutPromisified(1000)
+    .then(function(){
+        console.log("Hi");
+        return setTimeoutPromisified(3000);
+    }).then(function(){
+        console.log("Hello");
+        return setTimeoutPromisified(5000);
+    }).then(function(){
+        console.log("Bye");
+    })
