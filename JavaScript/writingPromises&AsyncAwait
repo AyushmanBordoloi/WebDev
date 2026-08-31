@@ -1,0 +1,46 @@
+const fs = require('fs');
+
+const p = new Promise((resolve, reject)=>resolve);
+console.log(p)
+
+//create a promisified version of fs.readFile
+//create a promisified version of setTimeout
+//create a promisified version of fs.writeFile
+
+function fsReadFilePromisified(filePath, encoding){
+    return new Promise((resolve, reject)=>{
+        fs.readFile(filePath, encoding, function(err, data){
+            if (err){
+                reject(err)
+            }else{
+                resolve(data)
+            }
+        })
+    });
+}
+
+fsReadFilePromisified("a.txt", "utf-8")
+    .then(function(data){
+        console.log(data);
+    })
+    .catch(function(e){
+        console.log("Error while reading the file")
+    })
+
+
+
+function setTimeoutPromisified(delay){
+    return new Promise(function(resolve, reject){
+        setTimeout(function(){
+            resolve()
+        }, delay)
+    })
+}
+
+setTimeoutPromisified(1000)
+    .then(function(){
+        console.log("1 sec passed")
+    })
+    .catch(function(e){
+
+    })
