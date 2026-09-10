@@ -1,1 +1,5 @@
-Hi there, this is Ayushman here.
+Hi there, this is Ayushman here. This is a second sentence. 
+However I'm counting it as a 2nd line. 
+Total number of words = 37. 
+Total number of sentence = 6. 
+Total number of lines = 5.

@@ -12,4 +12,4 @@ function main(fileName){
     })
 }
 
-main('a.txt');
+main(process.argv[2]); //giving the 2nd argument as input file
