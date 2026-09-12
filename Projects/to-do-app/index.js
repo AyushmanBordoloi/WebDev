@@ -1,40 +1,41 @@
 const express = require('express');
 const app = express();
+app.use(express.json());
 
 //route handlers
 app.get('/', function (req, res){
     res.sendFile("/Users/ayushmanbordoloi/Desktop/WebDev/Projects/to-do-app/index.html");
 })
 
-//path parameters
-//http://localhost:3000/add/10/20
-app.get('/add/:a/:b', function (req, res){
-    const a = parseInt(req.params.a);
-    const b = parseInt(req.params.b);
+app.post('/add', function (req, res){
+    const a = parseInt(req.body.a);
+    const b = parseInt(req.body.b);
     const add = a + b;
     res.json({
         ans: add
     })
 })
 
-app.get('/sub/:a/:b', function (req, res){
-    const a = parseInt(req.params.a);
-    const b = parseInt(req.params.b);
+app.post('/sub', function (req, res){
+    const a = parseInt(req.body.a);
+    const b = parseInt(req.body.b);
     const sub = a - b;
     res.json({
         ans: sub
     })
 })
 
-app.get('/mul/:a/:b', function (req, res){
-    const a = parseInt(req.params.a);
-    const b = parseInt(req.params.b);
+app.post('/mul', function (req, res){
+    const a = parseInt(req.body.a);
+    const b = parseInt(req.body.b);
     const mul = a * b;
     res.json({
         ans: mul
     })
 })
 
+//An example for path params
+//http://localhost:3000/div/20/10
 app.get('/div/:a/:b', function (req, res){
     const a = parseInt(req.params.a);
     const b = parseInt(req.params.b);
