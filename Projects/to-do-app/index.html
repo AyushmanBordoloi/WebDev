@@ -1,12 +1,55 @@
 <html>
-    <body>
-        <input type="text" placeholder="First No.">
-        <input type="text" placeholder="Second No.">
+    <head>
+        <script>
+            async function add(){
+                const a = document.getElementById("first").value;
+                const b = document.getElementById("second").value;
+                //document.getElementById("response").innerHTML=parseInt(a) + parseInt(b);
 
-        <button>Add</button>
-        <button>Sub</button>
-        <button>Mul</button>
-        <button>Div</button>
+                const res = await fetch("http://localhost:3000/add/" + a + "/" + b);
+                const json = await res.json()
+                document.getElementById("response").innerHTML = json.ans;
+            }
+
+            async function sub(){
+                const a = document.getElementById("first").value;
+                const b = document.getElementById("second").value;
+                //document.getElementById("response").innerHTML=parseInt(a) + parseInt(b);
+
+                const res = await fetch("http://localhost:3000/sub/" + a + "/" + b);
+                const json = await res.json()
+                document.getElementById("response").innerHTML = json.ans;
+            }
+
+            async function mul(){
+                const a = document.getElementById("first").value;
+                const b = document.getElementById("second").value;
+                //document.getElementById("response").innerHTML=parseInt(a) + parseInt(b);
+
+                const res = await fetch("http://localhost:3000/mul/" + a + "/" + b);
+                const json = await res.json()
+                document.getElementById("response").innerHTML = json.ans;
+            }
+
+            async function div(){
+                const a = document.getElementById("first").value;
+                const b = document.getElementById("second").value;
+                //document.getElementById("response").innerHTML=parseInt(a) + parseInt(b);
+
+                const res = await fetch("http://localhost:3000/div/" + a + "/" + b);
+                const json = await res.json()
+                document.getElementById("response").innerHTML = json.ans;
+            }
+        </script>
+    </head>
+    <body>
+        <input id="first" type="text" placeholder="First No."/>
+        <input id="second" type="text" placeholder="Second No."/>
+
+        <button onclick="add()">Add</button>
+        <button onclick="sub()">Sub</button>
+        <button onclick="mul()">Mul</button>
+        <button onclick="div()">Div</button>
 
         <div id="response"></div>
     </body>

@@ -3,21 +3,20 @@ const app = express();
 
 //route handlers
 app.get('/', function (req, res){
-    res.send('Hello World');
-})
-
-//query parameters
-//http://localhost:3000/add?a=10&b=20
-app.get('/add', function (req, res){
-    const a = parseInt(req.query.a);
-    const b = parseInt(req.query.b);
-    const sum = a + b;
-    res.send(`The sum of ${a} and ${b} is ${sum}`);
-
+    res.sendFile("/Users/ayushmanbordoloi/Desktop/WebDev/Projects/to-do-app/index.html");
 })
 
 //path parameters
-//http://localhost:3000/sub/10/20
+//http://localhost:3000/add/10/20
+app.get('/add/:a/:b', function (req, res){
+    const a = parseInt(req.params.a);
+    const b = parseInt(req.params.b);
+    const add = a + b;
+    res.json({
+        ans: add
+    })
+})
+
 app.get('/sub/:a/:b', function (req, res){
     const a = parseInt(req.params.a);
     const b = parseInt(req.params.b);
@@ -27,18 +26,22 @@ app.get('/sub/:a/:b', function (req, res){
     })
 })
 
-app.get('/mul', function (req, res){
-    const a = parseInt(req.query.a);
-    const b = parseInt(req.query.b);
+app.get('/mul/:a/:b', function (req, res){
+    const a = parseInt(req.params.a);
+    const b = parseInt(req.params.b);
     const mul = a * b;
-    res.send(`The mul of ${a} and ${b} is ${mul}`);
+    res.json({
+        ans: mul
+    })
 })
 
-app.get('/div', function (req, res){
-    const a = parseInt(req.query.a);
-    const b = parseInt(req.query.b);
+app.get('/div/:a/:b', function (req, res){
+    const a = parseInt(req.params.a);
+    const b = parseInt(req.params.b);
     const div = a / b;
-    res.send(`The div of ${a} and ${b} is ${div}`);
+    res.json({
+        ans: div
+    })
 })
 
 //port
