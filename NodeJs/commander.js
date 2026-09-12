@@ -1,3 +1,5 @@
+//Using commander library to create a CLI to do file based tasks like counting words, sentences and lines in a file.
+
 const fs = require('fs');
 const { Command } = require('commander');
 const program = new Command();
