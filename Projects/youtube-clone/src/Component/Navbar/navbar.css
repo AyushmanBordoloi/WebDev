@@ -1,0 +1,141 @@
+.navbar {
+    height: 56px;
+    box-sizing: border-box;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    top: 0;
+    position: fixed;
+    background-color: black;
+    z-index: 10;
+}
+
+.navbar__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    width: fit-content;
+}
+
+.navbar__hamburger {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navbar__logo-img {
+    height: 20px;
+}
+
+/*---------------------------navbar__left ends here---------------------------*/
+
+.navbar__middle {
+    display: flex;
+    gap: 10px;
+    width: 50%;
+}
+
+.navbar__searchBox{
+    width: 80%;
+    display: flex;
+}
+
+.navbar__searchBoxInput{
+    width: 100%;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid rgb(58, 57, 57);
+    background-color: #121212;
+    color: white;
+    font-size: 16px;
+    padding-left: 30px;
+    &:focus{
+        outline: none;
+    }
+    &::placeholder{
+        font-size: 16px;
+    }
+}
+
+.navbar__searchIconBox{
+    cursor: pointer;
+    width: 70px;
+    border: 1px solid rgb(58, 57, 57);
+    background-color: rgb(58, 57, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.navbar__mic{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58, 57, 57);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+/*---------------------------navbar__middle ends here---------------------------*/
+
+.navbar__create{
+    cursor: pointer;
+    width: 70px;
+    border: 1px solid rgb(58, 57, 57);
+    background-color: rgb(58, 57, 57);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar__alerts{
+    cursor: pointer;
+}
+
+.navbar__right{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.navbar__profilePic{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navbar__modal{
+    margin-top: 14px;
+    color: white;
+    position: absolute;
+    top: 35px;
+    width: 100%;
+    z-index: 20;
+}
+
+.navbar__modalOption{
+    background-color: rgb(58, 57, 57);
+    padding: 10px;
+    cursor: pointer;
+    &:hover{
+        background-color: #121212;
+    }
+}
