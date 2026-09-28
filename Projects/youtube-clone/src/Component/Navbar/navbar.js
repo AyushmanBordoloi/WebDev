@@ -6,19 +6,23 @@ import MicOutlinedIcon from '@mui/icons-material/MicOutlined';
 import AddIcon from '@mui/icons-material/Add';
 import NotificationsNoneRoundedIcon from '@mui/icons-material/NotificationsNoneRounded';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import SideNavbar from '../SideNavbar/sideNavbar';
 
-const Navbar = () => {
+const Navbar = ({setSideNavbarFunc, sideNavbar}) => {
     const [userPic, setUserPic] = useState("https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png")
     const [navbarModal, setNavbarModal] = useState(false);
 
     const handleClickModal = ()=>{
         setNavbarModal(prev=>!prev);
     }
+    const sideNavbarFunc = () =>{
+        setSideNavbarFunc(!sideNavbar)
+    }
 
     return (
     <div className='navbar'>
         <div className='navbar__left'>
-            <div className='navbar__hamburger'>
+            <div className='navbar__hamburger' onClick={sideNavbarFunc}>
                 <MenuRoundedIcon sx={{ color: 'white' }} />
             </div>
             <div className='navbar__logo'>
