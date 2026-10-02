@@ -95,6 +95,22 @@ const SideNavbar = ({sideNavbar}) => {
                 <img className='home__sideNavbarImgLogo' src="https://cdn.pixabay.com/photo/2020/05/17/20/21/cat-5183427_1280.jpg" alt="Profile Picture" />
                 <div className="home__sideNavbarTopOptionTitle">Mr Ayushman</div>
             </div>
+            <div className="home__sideNavbarTopOption">
+                <img className='home__sideNavbarImgLogo' src="https://cdn.pixabay.com/photo/2026/02/22/12/04/andsproject-girl-10137698_1280.png" alt="Profile Picture" />
+                <div className="home__sideNavbarTopOptionTitle">Ayushman Bordoloi</div>
+            </div>
+            <div className="home__sideNavbarTopOption">
+                <img className='home__sideNavbarImgLogo' src="https://cdn.pixabay.com/photo/2026/02/22/12/04/andsproject-girl-10137698_1280.png" alt="Profile Picture" />
+                <div className="home__sideNavbarTopOptionTitle">Ayushman Bordoloi</div>
+            </div>
+            <div className="home__sideNavbarTopOption">
+                <img className='home__sideNavbarImgLogo' src="https://cdn.pixabay.com/photo/2026/02/22/12/04/andsproject-girl-10137698_1280.png" alt="Profile Picture" />
+                <div className="home__sideNavbarTopOptionTitle">Ayushman Bordoloi</div>
+            </div>
+            <div className="home__sideNavbarTopOption">
+                <img className='home__sideNavbarImgLogo' src="https://cdn.pixabay.com/photo/2026/02/22/12/04/andsproject-girl-10137698_1280.png" alt="Profile Picture" />
+                <div className="home__sideNavbarTopOptionTitle">Ayushman Bordoloi</div>
+            </div>
         </div>
     </div>
   )
