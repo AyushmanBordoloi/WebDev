@@ -19,7 +19,7 @@
     display: flex;
     position: fixed;
     top: 56px;
-    padding: 10px 20px 10px 0px;
+    padding: 10px 20px 10px 40px;
     z-index: 1;
     width: 100%;
     box-sizing: border-box;
@@ -32,7 +32,6 @@
 
 .homePage_options::-webkit-scrollbar {
     display: none;
-    width: 12px;
 }
 
 .homePage_option{
@@ -52,9 +51,19 @@
 .homePage_main{
     display: grid;
     box-sizing: border-box;
-    grid-template-columns: repeat(auto-fill, minmax(384px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
     gap: 20px;
-    padding: 100px 20px 20px 0px;
+    padding: 100px 40px 20px 40px;
+    background-color: black;
+    width: 100%;
+}
+
+.fullHomePage_main{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    padding: 100px 40px 20px 40px;
     background-color: black;
     width: 100%;
 }

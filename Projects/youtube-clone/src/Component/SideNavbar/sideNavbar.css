@@ -19,7 +19,7 @@
 }
 
 .home__sideNavbar::-webkit-scrollbar{
-    width: 7px;
+    display: none;
 }
 
 .home__sideNavbarTop{

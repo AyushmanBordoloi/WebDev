@@ -19,7 +19,7 @@ const HomePage = ({sideNavbar}) => {
                 }
             </div>
 
-            <div className="homePage_main">
+            <div className={sideNavbar?"homePage_main":"fullHomePage_main"}>
                 <div className="youtube_video">
 
                     <div className="youtube_thumbnailBox">
