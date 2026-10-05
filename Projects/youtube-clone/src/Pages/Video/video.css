@@ -1,0 +1,436 @@
+.video{
+    background-color: black;
+    color: white;
+    margin-top: 55px;
+    display: flex;
+    padding: 30px 30px;
+    justify-content: center;
+}
+
+.videoPostSection{
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.video_youtube{
+    width: 100%;
+}
+
+.video_youtubeVideo{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.video_youtubeAbout{
+    display: flex;
+    flex-direction: column;
+}
+
+.video_youtubeTitle{
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.video_youtubeProfileBlock{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.video_youtubeProfileBlockLeft{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video_youtubeProfileBlockLeft_img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.video_youtubeProfileBlockLeft_imgPic{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.video_youtubeProfileBlockLeft_userInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video_youtubeProfileBlockLeft_userName{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.video_youtubeProfileBlockLeft_userSubscribers{
+    font-size: 14px;
+    color: rgb(140, 140, 140);
+}
+
+.video_youtubeSubscribeButton{
+
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 38px;
+    padding: 0px 16px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.video_youtubeJoinButton{
+
+    cursor: pointer;
+    background-color: rgb(58, 57, 57);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 38px;
+    padding: 0px 16px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.video_youtubeProfileBlockRight{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video_youtubeLikeDislikeButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(58, 57, 57);
+    border-radius: 20px;
+    height: 38px;
+    padding: 0px 16px;
+    cursor: pointer;
+}
+
+.video_youtubeLikeButton{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.video_youtubeLikeCount{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.video_youtubeLikeDislikeDivider{
+    width: 1px;
+    height: 20px;
+    background-color: rgb(140, 140, 140);
+}
+
+.video_youtubeDislikeButton{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.video_youtubeShareButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(58, 57, 57);
+    border-radius: 20px;
+    height: 38px;
+    padding: 0px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+.video_youtubeAskButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(58, 57, 57);
+    border-radius: 20px;
+    height: 38px;
+    padding: 0px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.video_youtubeSaveButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(58, 57, 57);
+    border-radius: 20px;
+    height: 38px;
+    padding: 0px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.video_youtubeMoreButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(58, 57, 57);
+    border-radius: 100%;
+    height: 38px;
+    padding: 0px 7px;
+    cursor: pointer;
+}
+
+.video_youtubeViewsAndDate{
+    gap: 20px;
+    display: flex;
+}
+
+.video_youtubeDescription{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(58, 57, 57);
+    border-radius: 20px;
+    margin-top: 10px;
+    gap: 10px;
+    font-size: 12;
+    font-weight: 600;
+}
+
+.video_youtubeComments{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.video_youtubeCommentsCount{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.video_youtubeSelfComment{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.video_youtubeSelfCommentProfilePic{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.addAComment{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.addACommentInput{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid rgb(58, 57, 57);
+    font-size: 14px;
+    &:focus{
+        outline: none;
+    }
+    &::placeholder{
+        font-size: 16px;
+    }
+}
+
+.selfCommentFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.selfCommentReaction{
+    cursor: pointer;
+    background-color: rgb(58, 57, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+}
+
+.cancelSubmitComment{
+    display: flex;
+    gap: 10px;
+}
+
+.cancelComment{
+    cursor: pointer;
+    background-color: rgb(58, 57, 57);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 38px;
+    padding: 0px 16px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.submitComment{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    border-radius: 20px;
+    height: 38px;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.video_youtubeOthersComment{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.othersCommentSection{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.video_youtubeOthersCommentProfilePic{
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.othersComments{
+    display: flex;
+    flex-direction: column;
+}
+
+.othersCommentSectionHeader{
+    display: flex;
+    gap: 10px;
+}
+
+.othersCommentSectionHeader_userName{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.othersCommentSectionHeader_time{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(140, 140, 140);
+}
+
+.othersCommentSectionComment{
+    margin-top: 10px;
+}
+
+
+
+
+
+/*------------------------------*/
+.videoSuggestions{
+    padding-left: 30px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    color: white;
+}
+
+.videoSuggestionsBlock{
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.videoSuggestionsBlock_thumbnail{
+    width: 258px;
+    height: 145px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.videoSuggestionsBlock_thumbnailPic{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.youtube_thumbnailTiming{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #121212;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+
+.videoSuggestionsBlock_description{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.videoSuggestionsBlock_descriptionTitle{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.videoSuggestionsBlock_descriptionProfile{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(140, 140, 140);   
+}
+
+.videoSuggestionsBlock_descriptionViewsAndTime{
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(140, 140, 140);
+}
