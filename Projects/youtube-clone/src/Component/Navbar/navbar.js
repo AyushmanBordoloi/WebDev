@@ -5,6 +5,7 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import MicOutlinedIcon from '@mui/icons-material/MicOutlined';
 import AddIcon from '@mui/icons-material/Add';
 import NotificationsNoneRoundedIcon from '@mui/icons-material/NotificationsNoneRounded';
+import { Link } from 'react-router-dom';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import SideNavbar from '../SideNavbar/sideNavbar';
 
@@ -25,12 +26,12 @@ const Navbar = ({setSideNavbarFunc, sideNavbar}) => {
             <div className='navbar__hamburger' onClick={sideNavbarFunc}>
                 <MenuRoundedIcon sx={{ color: 'white' }} />
             </div>
-            <div className='navbar__logo'>
+            <Link to={'/'} className='navbar__logo'>
                 <img 
                     className='navbar__logo-img'
                     src='https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/YouTube_2024_%28white_text%29.svg/500px-YouTube_2024_%28white_text%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail' 
                     alt='YouTube Logo' />
-            </div>
+            </Link>
         </div>
         <div className='navbar__middle'>
             <div className="navbar__searchBox">

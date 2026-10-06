@@ -1,5 +1,6 @@
 import React from 'react'
 import './homePage.css'
+import { Link } from 'react-router-dom'
 
 const HomePage = ({sideNavbar}) => {
 
@@ -20,7 +21,7 @@ const HomePage = ({sideNavbar}) => {
             </div>
 
             <div className={sideNavbar?"homePage_main":"fullHomePage_main"}>
-                <div className="youtube_video">
+                <Link to={'/watch/1234'} className="youtube_video">
 
                     <div className="youtube_thumbnailBox">
                         <img src="https://img.youtube.com/vi/jiLQgDrydRo/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
@@ -40,31 +41,9 @@ const HomePage = ({sideNavbar}) => {
                             <div className="youtube_titleBox_viewCount">16 views</div>
                         </div>
                     </div>
-                </div>
+                </Link>
 
-                <div className="youtube_video">
-
-                    <div className="youtube_thumbnailBox">
-                        <img src="https://img.youtube.com/vi/jiLQgDrydRo/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
-                        <div className="youtube_thumbnailTiming">
-                            28:00
-                        </div>
-                    </div>
-
-                    <div className="youtube_titleBox">
-                        <div className="youtube_titleBox_profile">
-                            <img src="https://cdn.pixabay.com/photo/2026/02/22/12/04/andsproject-girl-10137698_1280.png" alt="ProfilePicture" className="youtube_titleBox_profilePic" />
-                        </div>
-
-                        <div className="youtube_titleBox_title">
-                            <div className="youtube_titleBox_videoTitle">Mumbai to Mahabaleshwar</div>
-                            <div className="youtube_titleBox_channelName">Bordoloi</div>
-                            <div className="youtube_titleBox_viewCount">16 views</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="youtube_video">
+                <Link to={'/watch/1234'} className="youtube_video">
 
                     <div className="youtube_thumbnailBox">
                         <img src="https://img.youtube.com/vi/jiLQgDrydRo/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
@@ -84,31 +63,9 @@ const HomePage = ({sideNavbar}) => {
                             <div className="youtube_titleBox_viewCount">16 views</div>
                         </div>
                     </div>
-                </div>
+                </Link>
 
-                <div className="youtube_video">
-
-                    <div className="youtube_thumbnailBox">
-                        <img src="https://img.youtube.com/vi/jiLQgDrydRo/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
-                        <div className="youtube_thumbnailTiming">
-                            28:00
-                        </div>
-                    </div>
-
-                    <div className="youtube_titleBox">
-                        <div className="youtube_titleBox_profile">
-                            <img src="https://cdn.pixabay.com/photo/2026/02/22/12/04/andsproject-girl-10137698_1280.png" alt="ProfilePicture" className="youtube_titleBox_profilePic" />
-                        </div>
-
-                        <div className="youtube_titleBox_title">
-                            <div className="youtube_titleBox_videoTitle">Mumbai to Mahabaleshwar</div>
-                            <div className="youtube_titleBox_channelName">Bordoloi</div>
-                            <div className="youtube_titleBox_viewCount">16 views</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="youtube_video">
+                <Link to={'/watch/1234'} className="youtube_video">
 
                     <div className="youtube_thumbnailBox">
                         <img src="https://img.youtube.com/vi/jiLQgDrydRo/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
@@ -128,31 +85,9 @@ const HomePage = ({sideNavbar}) => {
                             <div className="youtube_titleBox_viewCount">16 views</div>
                         </div>
                     </div>
-                </div>
+                </Link>
 
-                <div className="youtube_video">
-
-                    <div className="youtube_thumbnailBox">
-                        <img src="https://img.youtube.com/vi/jiLQgDrydRo/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
-                        <div className="youtube_thumbnailTiming">
-                            28:00
-                        </div>
-                    </div>
-
-                    <div className="youtube_titleBox">
-                        <div className="youtube_titleBox_profile">
-                            <img src="https://cdn.pixabay.com/photo/2026/02/22/12/04/andsproject-girl-10137698_1280.png" alt="ProfilePicture" className="youtube_titleBox_profilePic" />
-                        </div>
-
-                        <div className="youtube_titleBox_title">
-                            <div className="youtube_titleBox_videoTitle">Mumbai to Mahabaleshwar</div>
-                            <div className="youtube_titleBox_channelName">Bordoloi</div>
-                            <div className="youtube_titleBox_viewCount">16 views</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="youtube_video">
+                <Link to={'/watch/1234'} className="youtube_video">
 
                     <div className="youtube_thumbnailBox">
                         <img src="https://img.youtube.com/vi/jiLQgDrydRo/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
@@ -172,31 +107,9 @@ const HomePage = ({sideNavbar}) => {
                             <div className="youtube_titleBox_viewCount">16 views</div>
                         </div>
                     </div>
-                </div>
+                </Link>
 
-                <div className="youtube_video">
-
-                    <div className="youtube_thumbnailBox">
-                        <img src="https://img.youtube.com/vi/jiLQgDrydRo/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
-                        <div className="youtube_thumbnailTiming">
-                            28:00
-                        </div>
-                    </div>
-
-                    <div className="youtube_titleBox">
-                        <div className="youtube_titleBox_profile">
-                            <img src="https://cdn.pixabay.com/photo/2026/02/22/12/04/andsproject-girl-10137698_1280.png" alt="ProfilePicture" className="youtube_titleBox_profilePic" />
-                        </div>
-
-                        <div className="youtube_titleBox_title">
-                            <div className="youtube_titleBox_videoTitle">Mumbai to Mahabaleshwar</div>
-                            <div className="youtube_titleBox_channelName">Bordoloi</div>
-                            <div className="youtube_titleBox_viewCount">16 views</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="youtube_video">
+                <Link to={'/watch/1234'} className="youtube_video">
 
                     <div className="youtube_thumbnailBox">
                         <img src="https://img.youtube.com/vi/jiLQgDrydRo/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
@@ -216,9 +129,9 @@ const HomePage = ({sideNavbar}) => {
                             <div className="youtube_titleBox_viewCount">16 views</div>
                         </div>
                     </div>
-                </div>
+                </Link>
 
-                <div className="youtube_video">
+                <Link to={'/watch/1234'} className="youtube_video">
 
                     <div className="youtube_thumbnailBox">
                         <img src="https://img.youtube.com/vi/jiLQgDrydRo/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
@@ -238,7 +151,95 @@ const HomePage = ({sideNavbar}) => {
                             <div className="youtube_titleBox_viewCount">16 views</div>
                         </div>
                     </div>
-                </div>
+                </Link>
+
+                <Link to={'/watch/1234'} className="youtube_video">
+
+                    <div className="youtube_thumbnailBox">
+                        <img src="https://img.youtube.com/vi/jiLQgDrydRo/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
+                        <div className="youtube_thumbnailTiming">
+                            28:00
+                        </div>
+                    </div>
+
+                    <div className="youtube_titleBox">
+                        <div className="youtube_titleBox_profile">
+                            <img src="https://cdn.pixabay.com/photo/2026/02/22/12/04/andsproject-girl-10137698_1280.png" alt="ProfilePicture" className="youtube_titleBox_profilePic" />
+                        </div>
+
+                        <div className="youtube_titleBox_title">
+                            <div className="youtube_titleBox_videoTitle">Mumbai to Mahabaleshwar</div>
+                            <div className="youtube_titleBox_channelName">Bordoloi</div>
+                            <div className="youtube_titleBox_viewCount">16 views</div>
+                        </div>
+                    </div>
+                </Link>
+
+                <Link to={'/watch/1234'} className="youtube_video">
+
+                    <div className="youtube_thumbnailBox">
+                        <img src="https://img.youtube.com/vi/jiLQgDrydRo/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
+                        <div className="youtube_thumbnailTiming">
+                            28:00
+                        </div>
+                    </div>
+
+                    <div className="youtube_titleBox">
+                        <div className="youtube_titleBox_profile">
+                            <img src="https://cdn.pixabay.com/photo/2026/02/22/12/04/andsproject-girl-10137698_1280.png" alt="ProfilePicture" className="youtube_titleBox_profilePic" />
+                        </div>
+
+                        <div className="youtube_titleBox_title">
+                            <div className="youtube_titleBox_videoTitle">Mumbai to Mahabaleshwar</div>
+                            <div className="youtube_titleBox_channelName">Bordoloi</div>
+                            <div className="youtube_titleBox_viewCount">16 views</div>
+                        </div>
+                    </div>
+                </Link>
+
+                <Link to={'/watch/1234'} className="youtube_video">
+
+                    <div className="youtube_thumbnailBox">
+                        <img src="https://img.youtube.com/vi/jiLQgDrydRo/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
+                        <div className="youtube_thumbnailTiming">
+                            28:00
+                        </div>
+                    </div>
+
+                    <div className="youtube_titleBox">
+                        <div className="youtube_titleBox_profile">
+                            <img src="https://cdn.pixabay.com/photo/2026/02/22/12/04/andsproject-girl-10137698_1280.png" alt="ProfilePicture" className="youtube_titleBox_profilePic" />
+                        </div>
+
+                        <div className="youtube_titleBox_title">
+                            <div className="youtube_titleBox_videoTitle">Mumbai to Mahabaleshwar</div>
+                            <div className="youtube_titleBox_channelName">Bordoloi</div>
+                            <div className="youtube_titleBox_viewCount">16 views</div>
+                        </div>
+                    </div>
+                </Link>
+
+                <Link to={'/watch/1234'} className="youtube_video">
+
+                    <div className="youtube_thumbnailBox">
+                        <img src="https://img.youtube.com/vi/jiLQgDrydRo/maxresdefault.jpg" alt="Thumbnail" className="youtube_thumbnailPic" />
+                        <div className="youtube_thumbnailTiming">
+                            28:00
+                        </div>
+                    </div>
+
+                    <div className="youtube_titleBox">
+                        <div className="youtube_titleBox_profile">
+                            <img src="https://cdn.pixabay.com/photo/2026/02/22/12/04/andsproject-girl-10137698_1280.png" alt="ProfilePicture" className="youtube_titleBox_profilePic" />
+                        </div>
+
+                        <div className="youtube_titleBox_title">
+                            <div className="youtube_titleBox_videoTitle">Mumbai to Mahabaleshwar</div>
+                            <div className="youtube_titleBox_channelName">Bordoloi</div>
+                            <div className="youtube_titleBox_viewCount">16 views</div>
+                        </div>
+                    </div>
+                </Link>
             </div>
         </div>
     )
